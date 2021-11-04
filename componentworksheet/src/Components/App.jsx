@@ -10,14 +10,13 @@ class App extends Component {
     };
   }
   render() {
-    return (
-      <ol>
-        {this.state.names.map(function (singleName) {
-          return <ol>{singleName}</ol>;
-        })}
-      </ol>
-    );
+    <button className='btn btn-primary'>Click Me</button>;
+    return <DisplayName names={this.state.names}
+    />;
+    
+    
   }
+  
 }
 
 export default App;
